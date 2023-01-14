@@ -1,5 +1,10 @@
 # Iserv Timetable
 
-A programm that fetches your IServ timetable for today, saves it as json and displays it in the console.
+A script which creates an api server from which you can get your IServ timetable.
+Requests:
+`URL/getTimetable?iservName=ISERV_URL&username=ISERV_USERNAME&password=ISERV_PASSWORD&schoolClass=CLASS`
 
-To use it, configer a `.env` file like in the `.env.example`.
+You can run the server by running:
+`sudo uvicorn server:app --reload --port 80 --host 0.0.0.0`
+
+or use the `Docker` image
